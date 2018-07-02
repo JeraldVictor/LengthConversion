@@ -53,7 +53,7 @@ export default {
     };
   },
   created() {
-    let url = "http://localhost:3000/";
+    let url = "http://localhost:3000/getval";
     fetch(url)
       .then(response => {
         return response.json();
