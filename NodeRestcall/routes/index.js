@@ -7,6 +7,10 @@ db.connect(path.join(__dirname,'../db'), ['dbvalues']);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    res.render("index",{title:"Express"});
+});
+
+router.get("/getval",function (req,res) {
     var output=[];
     db.dbvalues.find().forEach((i)=>{
         output.push({measurement:i.measurement,unit:i.unit});
@@ -14,7 +18,6 @@ router.get('/', function(req, res, next) {
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(output));
 });
-
 router.get("/conversion/:val/:mes",function (req,res) {
     var measure=req.params.mes;
     var value=req.params.val;
