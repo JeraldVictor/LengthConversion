@@ -1,4 +1,12 @@
 # LengthConversion
+=>  this Project is a convertion application.
+=>  When we give the input in Vue it requests the node to give the conversion and this node route gives the output with convertions as JSON data.
+=>  this JSON data is conected with vue and only the selected output will be displaied.
+
+
+
+
+
 Node Restcall and Vue API to Accept that call
 In Noderestcall folder
   1.run "npm i" 
@@ -13,3 +21,5 @@ In Noderestcall folder
    3.view "localhost:3001"
  
  
+
+
